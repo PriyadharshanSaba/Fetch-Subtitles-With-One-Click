@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo bash for Mac!
+echo Hey There
 
-echo subt_retr
+mkdir "dir1"
