@@ -1,12 +1,8 @@
 #!/bin/bash
 
-echo "scripy"
+echo Hey There
 echo
-for f in "$@" do
-echo "$f"
-done
+pip install mechanize
 echo
-echo "over"
-
 
 #python /Users/pyadhe/downloads/macbash/mail.py

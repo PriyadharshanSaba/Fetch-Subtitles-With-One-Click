@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo Hey There;
+echo
+pip install mechanize
+echo
+echo Warming Up
+echo
+pip install beautifulsoup4
+echo
+echo Fetching stuff
+echo
+pip install requests
+echo
+echo Almost Done!
+echo
+clear
+
+chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
