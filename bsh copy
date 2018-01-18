@@ -1,6 +1,0 @@
-#!/bin/bash
-echo Hey There
-echo "$@"
-python /Users/pyadhe/Documents/iTest/testBash/macBash/t.py "$@"
-
-
