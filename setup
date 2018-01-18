@@ -16,4 +16,8 @@ echo Almost Done!
 echo
 clear
 
+<<<<<<< HEAD
 chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
+=======
+chmod 700 /Users/pyadhe/Downloads/macBash/bsh
+>>>>>>> aaa0b97e17b72e7c606e12113a13f60acb3dd85b
