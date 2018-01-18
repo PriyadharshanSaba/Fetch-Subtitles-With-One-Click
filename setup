@@ -1,23 +1,20 @@
 #!/bin/bash
 
-echo Hey There;
-echo
-pip install mechanize
-echo
-echo Warming Up
-echo
-pip install beautifulsoup4
-echo
-echo Fetching stuff
-echo
-pip install requests
-echo
-echo Almost Done!
-echo
-clear
+#echo Hey There;
+#echo
+#pip install mechanize
+#echo
+#echo Warming Up
+#echo
+#pip install beautifulsoup4
+#echo
+#echo Fetching stuff
+#echo
+#pip install requests
+#echo
+#echo Almost Done!
+#echo
+#clear
 
-<<<<<<< HEAD
 chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
-=======
-chmod 700 /Users/pyadhe/Downloads/macBash/bsh
->>>>>>> aaa0b97e17b72e7c606e12113a13f60acb3dd85b
+
