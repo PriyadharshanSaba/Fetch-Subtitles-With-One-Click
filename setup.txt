@@ -19,3 +19,33 @@
 
 chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
 
+
+
+#class PD:
+#    def __init__(self):
+##        self.name=name
+#        self.openBots()
+#
+#    def openBots(self):
+#        print "func openBots(): "
+#        #file:///Users/pyadhe/miniconda2/lib/python2.7/site-packages/mechanize/_mechanize.py
+#        mechanize = imp.load_source('mechanize.py', '/Users/pyadhe/miniconda2/lib/python2.7/site-packages/mechanize')
+#
+#        #mechanize = imp.load_source(name,ft[1])
+#        print mechanize
+#        br =mechanize.Browser()
+#        br.set_handle_robots(False)
+#        with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
+#            the_file.write("heyyyyy")
+#        #    br.open("https://subscene.com")
+#        #    br.select_form(nr=0)
+#        #    br.form['q']=mnam
+#
+#x=PD()
+
+
+
+#
+#print "hello"
+#mname=PD.name()
+#print mname
