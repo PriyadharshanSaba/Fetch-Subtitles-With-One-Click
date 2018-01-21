@@ -9,12 +9,18 @@ import os
 def name():
     i=0
     mname=""
+#    for x in sys.argv:
+#        if i>0:
+#            mname=mname+x+" "
+#            i+=1
+#    with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
+#        the_file.write(mname)
+
     for x in sys.argv:
-        if i>0:
-            with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
-                the_file.write(x+" ")
-                mname=mname+x+" "
-        i+=1
+        x=x.split(" ")
+        print x[0][1]
+#        with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
+#            the_file.write(x[0][1]+" ")
     return mname
 
 def openBots(name):
@@ -31,14 +37,16 @@ def openBots(name):
     br.form['q']=name
     sub = br.submit()
     soup = BeautifulSoup(sub.read(),"lxml")
-
+    row_count=0
     for div in soup.findAll('div',{'class':'col-sm-12'}):
-        dd=div.find('div',{'class':'media-body'})
-        di=dd.find('a')
-        fnam = di.text.strip().lower().split("\n")
-            #if fnam[0] == name:
-        link=di['href']
-        break
+        row_count+=1
+        if row_count==1:
+            dd=div.find('div',{'class':'media-body'})
+            di=dd.find('a')
+            fnam = di.text.strip().lower().split("\n")
+            link=di['href']
+        elif row_count>1:
+            break
 
     op=br.open(link)
     soup = BeautifulSoup(op.read(),"lxml")
@@ -73,26 +81,5 @@ def openBots(name):
     br.retrieve(down_link,fnam)
 
 mname=name()
-openBots(mname)
+#openBots(mname)
 
-
-
-
-
-
-
-#f, filename, description = imp.find_module('mechanize')
-#mechanize = imp.load_module('mechanize.module', f, filename, description)
-#f, filename, description = imp.find_module('bs4')
-#BeautifulSoup = imp.load_module('bs4.BeautifulSoup', f, filename, description)
-
-
-#    sys.path.append("/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/mechanize")
-#    from mechanize import _mechanize as mechanize
-#    sys.path.append("/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bs4")
-#    from bs4 import BeautifulSoup
-#    f = "/usr/local/lib/python2.7/site-packages/mechanize"
-#
-#    mechanize = imp.load_source('mechanize.module', f)
-#    f, filename, description = imp.find_module('bs4')
-#BeautifulSoup = imp.load_source('bs4.BeautifulSoup', f, filename, description)
