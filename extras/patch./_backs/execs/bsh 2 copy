@@ -1,8 +1,8 @@
 #!/bin/bash
 echo Hey There
 cd /Users/pyadhe/movies
-mkdir "PD_SubsRETR"
-cd /Users/pyadhe/movies/PD_SubsRETR/
+mkdir "PD_SubsRetr"
+cd /Users/pyadhe/movies/PD_SubsRetr/
 
 nam=""
 for f in "$@"

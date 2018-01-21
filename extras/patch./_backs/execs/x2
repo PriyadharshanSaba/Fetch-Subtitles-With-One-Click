@@ -1,0 +1,6 @@
+#!/bin/bash
+echo Hey There
+echo "$@"
+python /Users/pyadhe/Documents/iTest/testBash/macBash/mail.py $@
+
+mkdir "$@"

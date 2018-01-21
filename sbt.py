@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+
+#PD_SubsRETR : Fetch Movies Subtitles with One click!
+#Creator / Developer Name : Priyadharshan Saba
+#Script : Shell Script, Python, Apple Scripts
+#Python Dependencis: mechanize :   https://pypi.python.org/pypi/mechanize/
+#                    BeautifulSoup4 : https://pypi.python.org/pypi/beautifulsoup4
+#Runtime : Python 2
+#OS Requirements: Mac OSX , macOS
+
+
+
 import imp
 import sys
 import os
@@ -9,18 +20,18 @@ import os
 def name():
     i=0
     mname=""
-#    for x in sys.argv:
-#        if i>0:
-#            mname=mname+x+" "
-#            i+=1
-#    with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
-#        the_file.write(mname)
-
+    nam=""
+    row_count=0
     for x in sys.argv:
         x=x.split(" ")
-        print x[0][1]
-#        with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
-#            the_file.write(x[0][1]+" ")
+        for i in x:
+            if row_count>=1:
+                mname=mname+str(i)+" "
+            row_count+=1
+        mname=nam+mname
+    mname=mname.strip()
+#    with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
+#        the_file.write(mname)
     return mname
 
 def openBots(name):
@@ -81,5 +92,5 @@ def openBots(name):
     br.retrieve(down_link,fnam)
 
 mname=name()
-#openBots(mname)
+openBots(mname)
 
