@@ -3,28 +3,12 @@ import imp
 import sys
 import os
 
-global pat
-pat = "/Users/pyadhe/miniconda2/lib/python2.7/site-packages"
-
-
-
-
-#try:
-#    import sys
-#    start = sys.version.index('|') # Do we have a modified sys.version?
-#    end = sys.version.index('|', start + 1)
-#    version_bak = sys.version # Backup modified sys.version
-#    sys.version = sys.version.replace(sys.version[start:end+1], '') # Make it legible for platform module
-#    import platform
-#    platform.python_implementation() # Ignore result, we just need cache populated
-#    platform._sys_version_cache[version_bak] = platform._sys_version_cache[sys.version] # Duplicate cache
-#    sys.version = version_bak # Restore modified version string
-#    import mechanize
-#    from bs4 import BeautifulSoup
-#except ValueError: # Catch .index() method not finding a pipe
-#    pass
+sys.path.append("/Users/pyadhe/miniconda2/lib/python2.7/site-packages/")
 
 def name():
+    #imp.find_module('mechanize')
+    #mechanize = imp.load_module('mechanize.module', f, filename, description)
+
     i=0
     mname=""
     for x in sys.argv:
@@ -36,6 +20,14 @@ def name():
     return mname
 
 def openBots(name):
+#    sys.path.append("/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/mechanize")
+#    from mechanize import _mechanize as mechanize
+#    sys.path.append("/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bs4")
+#    from bs4 import BeautifulSoup
+    f, filename, description = imp.find_module('mechanize')
+    mechanize = imp.load_module('mechanize.module', f, filename, description)
+    f, filename, description = imp.find_module('bs4')
+    BeautifulSoup = imp.load_module('bs4.BeautifulSoup', f, filename, description)
     name=name.strip().lower()
     name=name.split('.')
     name=name[0]
@@ -43,6 +35,7 @@ def openBots(name):
     br.set_handle_robots(False)
     op=br.open("http://www.yifysubtitles.com")
     br.select_form(nr=0)
+    print br
     br.form['q']=name
     sub = br.submit()
     soup = BeautifulSoup(sub.read(),"lxml")
@@ -87,16 +80,12 @@ def openBots(name):
         down_link= a['href']
     br.retrieve(down_link,fnam)
 
-
-
-os.chdir("/Users/pyadhe/miniconda2/lib/python2.7")
-print os.path.abspath('')
-from sitepackages import mechanize
-from bs4 import BeautifulSoup
 mname=name()
-#openBots(mname)
+openBots(mname)
 
 
+#f, filename, description = imp.find_module('mechanize')
+#mechanize = imp.load_module('mechanize.module', f, filename, description)
+#f, filename, description = imp.find_module('bs4')
+#BeautifulSoup = imp.load_module('bs4.BeautifulSoup', f, filename, description)
 
-#sys.executable
-#/Users/pyadhe/miniconda2/bin/python

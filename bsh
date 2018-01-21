@@ -3,5 +3,6 @@ echo Hey There
 
 for f in "$@"
 do
+cd /Users/pyadhe/miniconda2/lib/python2.7/site-packages &&
 python2.7 /Users/pyadhe/Documents/iTest/testBash/macBash/sbt.py $f
 done

@@ -49,3 +49,25 @@ chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
 #print "hello"
 #mname=PD.name()
 #print mname
+
+
+
+
+
+
+
+
+#try:
+#    import sys
+#    start = sys.version.index('|') # Do we have a modified sys.version?
+#    end = sys.version.index('|', start + 1)
+#    version_bak = sys.version # Backup modified sys.version
+#    sys.version = sys.version.replace(sys.version[start:end+1], '') # Make it legible for platform module
+#    import platform
+#    platform.python_implementation() # Ignore result, we just need cache populated
+#    platform._sys_version_cache[version_bak] = platform._sys_version_cache[sys.version] # Duplicate cache
+#    sys.version = version_bak # Restore modified version string
+#    import mechanize
+#    from bs4 import BeautifulSoup
+#except ValueError: # Catch .index() method not finding a pipe
+#    pass
