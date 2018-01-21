@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo Hey There
-echo
-pip install mechanize
-echo
-
-#python /Users/pyadhe/downloads/macbash/mail.py
