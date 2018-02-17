@@ -8,15 +8,9 @@
 #Runtime : Python 2
 #OS Requirements: Mac OSX , macOS
 
-
-
 import imp
 import sys
 import os
-
-
-
-
 def name():
     i=0
     mname=""
@@ -30,12 +24,10 @@ def name():
             row_count+=1
         mname=nam+mname
     mname=mname.strip()
-#    with open('/Users/pyadhe/Documents/iTest/testBash/macBash/test.txt', 'a') as the_file:
-#        the_file.write(mname)
     return mname
 
 def openBots(name):
-    sys.path.append("/usr/local/lib/python2.7/site-packages")
+    sys.path.append("/usr/local/lib/python2.7/site-packages")   
     import mechanize
     from bs4 import BeautifulSoup
     name=name.strip().lower()
