@@ -6,8 +6,6 @@ Click it, and that's all you've got to do... <br><br>
 Or maybe rest back and <b>breath in</b>, and <b>out</b>.<br> There you go! Your subtitles will be present in '<b>PD_SubsRETR</b>' under Movies directory.
 <br><br>
 
-<h4>instructies</h4>
-<p>Pull the Repo and install the Mac Workflow 'Fetch Subtitles'.
-Fork it and add your own Ideas.</p>
+<h3>Instructies:   </h3> <p> Pull the Repo and install the Mac Workflow 'Fetch Subtitles'. Fork it and add your own Ideas.</p>
 
-<b>Note: </b> <i>This Script is best suited for Python2 environment.</i>
+<h6><b>Note: </b> <i>This Script is best suited for Python2 environment.</i></h6>
