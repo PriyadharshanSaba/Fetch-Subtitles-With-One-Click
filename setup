@@ -1,21 +1,16 @@
 #!/bin/bash
 
-#echo Hey There;
-#echo
-#pip install mechanize
-#echo
-#echo Warming Up
-#echo
-#pip install beautifulsoup4
-#echo
-#echo Fetching stuff
-#echo
-#pip install requests
-#echo
-#echo Almost Done!
-#echo
-#clear
-
-
+pat="$(pwd)"
+echo "$pat"
 chmod 700 /Users/pyadhe/Documents/iTest/testBash/macbash/bsh
+echo  > isiodor_mordor_subtr.txt
+echo "$pat" >> isiodor_mordor_subtr.txt
+pip install mechanize
+pip install beautifulsoup4
+echo Fetching stuff
+echo
+pip install requests
+echo Almost Done!
+clear
+
 

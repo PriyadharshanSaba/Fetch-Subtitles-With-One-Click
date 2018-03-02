@@ -1,7 +1,14 @@
 #!/bin/bash
 echo Hey There
+pat="$(cat isiodor_mordor)"
 cd /Users/pyadhe/movies
-mkdir "PD_SubsRETR"
+
+{ 
+    mkdir "PD_SubsRETR"
+} || { 
+ echo ""
+}
+
 cd /Users/pyadhe/movies/PD_SubsRETR/
 
 nam=""
