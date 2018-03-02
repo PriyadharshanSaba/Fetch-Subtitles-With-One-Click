@@ -1,7 +1,12 @@
 #!/bin/bash
 echo Hey There
-pat="$(cat isiodor_mordor)"
-cd /Users/pyadhe/movies
+
+pat="$(cat isiodor_mordor_subtr.txt)"
+echo "$pat"
+
+#cd /Users/pyadhe/movies
+cd $pat
+cd movies
 
 { 
     mkdir "PD_SubsRETR"
