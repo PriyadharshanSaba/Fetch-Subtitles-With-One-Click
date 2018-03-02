@@ -2,10 +2,12 @@
 
 A Mac OSX / macOS service which <b>Fetches you Movie Subtitles with a click</b>.
 Right click on a movie file and you can find the service 'Fetch Subtitles' at the bottom of the list.
-Click it, and that's all you've got to do...
-Or maybe rest back and breath in, and out. There you go, your subtitles will be present in '<b>PD_SubsRETR</b>' under Movies directory.
+Click it, and that's all you've got to do... <br><br>
+Or maybe rest back and <b>breath in</b>, and <b>out</b>.<br> There you go! Your subtitles will be present in '<b>PD_SubsRETR</b>' under Movies directory.
 <br><br>
-Pull the repo and install the Mac Workflow 'Fetch Subtitles'. 
 
+<h4>instructies</h4>
+<p>Pull the Repo and install the Mac Workflow 'Fetch Subtitles'.
+Fork it and add your own Ideas.</p>
 
-<b>Note: </b> You must add your python2 packages path at line 30 -> sys.path.append("<your path>").
+<b>Note: </b> <i>This Script is best suited for Python2 environment.</i>
